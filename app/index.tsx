@@ -1,15 +1,18 @@
-import { Text, View } from "react-native";
+import { Text, View, StyleSheet } from "react-native";
+import WelcomeMessage from "./components/WelcomeMessage";
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Hello World !</Text>
+    <View>
+      <WelcomeMessage name="Quentin" />
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  }
+})
