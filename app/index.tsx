@@ -1,20 +1,14 @@
-import { Text, View, StyleSheet } from "react-native";
-import WelcomeMessage from "./components/WelcomeMessage";
+import { View  } from "react-native";
+import WelcomeMessage from "./WelcomeMessage";
 import Counter from "./Counter";
+import LoginStatus from "./LoginStatus";
 
 export default function Index() {
   return (
     <View>
       <WelcomeMessage name="Quentin" />
+      <LoginStatus />
       <Counter />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  }
-})
